@@ -1,0 +1,38 @@
+footer{
+    position: relative;
+    padding-top: 20px;
+}
+.grid-5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px 20px;
+}
+.footer-logo{
+    width: 50px;
+}
+.footer-heading{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+}
+.footer-list-item{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+}
+.footer-logo{
+    font-size: 20px;
+    color: var(--main);
+}
+.line{
+    width: 150%;
+    height: 1px;
+    background-color: var(--main);
+    margin-bottom: 50px;
+    position: absolute;
+    top: -30px;
+    left: -10%;
+}

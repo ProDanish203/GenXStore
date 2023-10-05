@@ -1,0 +1,72 @@
+.virtual-section{
+    margin: 0 auto;
+    width: 90%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.content1{
+    flex: 1 1 450px;
+}
+.content2{
+    flex: 1 1 300px;
+}
+.content1 .sub-heading{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.content1 span{
+    color: #ccc;
+}
+.content1 .try{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.content1 .try span{
+    font-size: 2.5rem;
+}
+.content1 .try .shade{
+    margin-left: 20px;
+    width: 10rem;
+}
+.content2 .wrapper{
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+}
+
+@media (max-width: 925px){
+    .virtual-section{
+        width: 100%;
+    }
+    .content1{
+        flex: 1 1 350px;
+    }
+    .content2{
+        flex: 1 1 250px;
+    }
+    .content1 .sub-heading{
+        font-size: 2rem;
+    }
+    .content1 .try span{
+        font-size: 2rem;
+    }
+    .content1 .try .shade{
+        width: 8rem;
+    }
+}
+
+@media (max-width: 630px){
+    .row{
+        text-align: center;
+        row-gap: 40px;
+    }
+    .content1 .try .shade{
+        margin-left: 45%;
+    }
+}

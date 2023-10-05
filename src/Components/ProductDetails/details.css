@@ -1,0 +1,122 @@
+.details-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod-row{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+.prod-row .col1{
+    flex: 1 1 250px;
+    border-right: 2px solid #111;
+}
+.prod-row .col1 img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+.prod-row .col2{
+    padding: 0 20px;
+    flex: 1 1 450px;
+    color: var(--black);
+}
+.prod-row .col2 .prod-name{
+    font-size: 2.5rem;
+}
+.prod-row .col2 .prod-desc{
+    font-size: 1.2rem;
+}
+.prod-row .col2 .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prod-row .col2 .prod-price{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.prod-row .col2 .prod-cat{
+    font-size: 1rem;
+    color: #555;
+}
+.prod-row .col2 .prod-content{
+    margin: 20px 0 10px;
+    font-size: 14px;
+}
+.btn{
+    padding: 10px 10px;
+    width: 100%;
+    background-color: var(--main);
+    border-radius: 4px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0 20px;
+}
+.btn:hover{
+    scale: 1.01;
+}
+
+@media (max-width: 975px){
+    .details-section{
+        padding: 100px 0;
+    }
+    .prod-row{
+        border-radius: 4px;
+        margin: 0;
+    }
+    .prod-row .col1{
+        flex: 1 1 250px;
+        border-bottom: 2px solid #111;
+        text-align: center;
+    }
+    .prod-row .col1 img{
+        width: 50%;
+    }
+    .prod-row .col2{
+        padding: 0 20px;
+        flex: 1 1 450px;
+        color: var(--black);
+    }
+    .prod-row .col2 .prod-name{
+        font-size: 2rem;
+    }
+    .prod-row .col2 .prod-desc{
+        font-size: 1.2rem;
+    }
+    .prod-row .col2 .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .prod-row .col2 .prod-price{
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    .prod-row .col2 .prod-cat{
+        font-size: 1rem;
+        color: #555;
+    }
+    .prod-row .col2 .prod-content{
+        margin: 20px 0 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 975px){
+    .prod-row .col1 img{
+        width: 250px;
+    }
+}
+
